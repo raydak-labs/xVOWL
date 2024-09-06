@@ -36,7 +36,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: "latest"
           extended: true
 
       - name: Checkout
@@ -52,7 +52,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo -s exampleSite --minify --gc --themesDir ../.. \
+          hugo -s exampleSite --minify --gc --themesDir .. \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact

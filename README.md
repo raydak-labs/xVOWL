@@ -1,3 +1,7 @@
-# xVOWL
+# xVOWL Landing page
 
-Landing page for new project idea.
+Landing page for xvowl.
+
+## Credits
+
+https://github.com/tomowang/hugo-theme-tailwind

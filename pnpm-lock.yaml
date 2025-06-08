@@ -21,8 +21,8 @@ importers:
         specifier: 3.14.9
         version: 3.14.9
       hugo-bin:
-        specifier: 0.144.7
-        version: 0.144.7
+        specifier: 0.144.8
+        version: 0.144.8
       tailwindcss:
         specifier: 4.1.8
         version: 4.1.8
@@ -343,10 +343,6 @@ packages:
     resolution: {integrity: sha512-FveZTNuGw04cxlAiWbzi6zTAL/lhehaWbTtgluJh4/E95DqMwTmha3KZN1aAWA8cFIhHzMZUvLevkw5Rqk+tSQ==}
     engines: {node: '>= 0.6'}
 
-  cross-spawn@7.0.3:
-    resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
-    engines: {node: '>= 8'}
-
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
@@ -492,8 +488,8 @@ packages:
     resolution: {integrity: sha512-V5nVw1PAOgfI3Lmeaj2Exmeg7fenjhRUgz1lPSezy1CuhPYbgQtbQj4jZfEAEMlaL+vupsvhjqCyjzob0yxsmQ==}
     engines: {node: '>=10.19.0'}
 
-  hugo-bin@0.144.7:
-    resolution: {integrity: sha512-EYbVkonORLj60sJpW3IkDQX3TTmFPwKsadpYXU9mbFzcROhDJNTZkZ63NTDgQEC576lEdtHSzX5Z7KgjCimIVA==}
+  hugo-bin@0.144.8:
+    resolution: {integrity: sha512-ZqXy5cvfMJ1FSGrO62rp9koEZ+bXHcw1gPKV5LJDveYKMEFmnBy4TW8KWD0joPyHKD1xKRpVnOL13/AQx8NxlA==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1379,12 +1375,6 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  cross-spawn@7.0.3:
-    dependencies:
-      path-key: 3.1.1
-      shebang-command: 2.0.0
-      which: 2.0.2
-
   cross-spawn@7.0.6:
     dependencies:
       path-key: 3.1.1
@@ -1420,7 +1410,7 @@ snapshots:
 
   execa@5.1.1:
     dependencies:
-      cross-spawn: 7.0.3
+      cross-spawn: 7.0.6
       get-stream: 6.0.1
       human-signals: 2.1.0
       is-stream: 2.0.1
@@ -1529,7 +1519,7 @@ snapshots:
       quick-lru: 5.1.1
       resolve-alpn: 1.2.1
 
-  hugo-bin@0.144.7:
+  hugo-bin@0.144.8:
     dependencies:
       '@xhmikosr/bin-wrapper': 13.0.5
       package-config: 5.0.0

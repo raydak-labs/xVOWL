@@ -10,7 +10,7 @@
     "@tailwindcss/postcss": "4.1.8",
     "@tailwindcss/typography": "0.5.16",
     "alpinejs": "3.14.9",
-    "hugo-bin": "0.144.7",
+    "hugo-bin": "0.144.8",
     "tailwindcss": "4.1.8"
   },
   "devDependencies": {

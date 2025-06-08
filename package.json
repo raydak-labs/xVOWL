@@ -1,19 +1,41 @@
 {
+  "name": "xvowl.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "raydak GmbH",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "6.7.2",
+    "@tailwindcss/postcss": "4.1.8",
+    "@tailwindcss/typography": "0.5.16",
+    "alpinejs": "3.14.9",
+    "hugo-bin": "0.144.7",
+    "tailwindcss": "4.1.8"
+  },
+  "devDependencies": {
+    "postcss": "8.5.4",
+    "postcss-cli": "11.0.1",
+    "prettier": "3.5.3",
+    "prettier-plugin-go-template": "0.0.15",
+    "prettier-plugin-tailwindcss": "0.6.12",
+    "rimraf": "6.0.1"
+  },
   "scripts": {
     "build": "hugo --minify -s exampleSite --gc --themesDir=..",
     "dev-hugo": "hugo server -s exampleSite --gc --themesDir=..",
     "dev-tailwind": "npx tailwindcss -i assets/css/main.css -o assets/css/index.css --watch",
     "dev": "run-p dev-hugo dev-tailwind"
   },
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.15",
-    "hugo-bin": "^0.131.1",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.6",
-    "tailwindcss": "^3.4.10"
-  },
   "hugo-bin": {
     "buildTags": "extended"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "hugo-bin"
+    ],
+    "onlyBuiltDependencies": [
+      "hugo-bin"
+    ]
   }
 }

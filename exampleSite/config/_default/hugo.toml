@@ -1,7 +1,6 @@
 baseURL = "https://gohugo.io"
 title = "Landing page for xVOWL"
 copyright = "raydak"
-paginate = 3                     # for demonstration of pagination
 languageCode = "en"
 defaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -11,28 +10,32 @@ ignoreErrors = ["error-remote-getjson"]
 theme = "."
 enableGitInfo = true
 
+
+[pagination]
+    pagerSize = 3 # for demonstration of pagination
+
 [markup]
-_merge = "deep"
+    _merge = "deep"
 
 [taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
+    category = "categories"
+    tag = "tags"
+    series = "series"
 
 [privacy]
-[privacy.vimeo]
-disabled = false
-simple = true
+    [privacy.vimeo]
+        disabled = false
+        simple = true
 
-[privacy.twitter]
-disabled = false
-enableDNT = true
-simple = true
+    [privacy.twitter]
+        disabled = false
+        enableDNT = true
+        simple = true
 
-[privacy.instagram]
-disabled = false
-simple = true
+    [privacy.instagram]
+        disabled = false
+        simple = true
 
-[privacy.youtube]
-disabled = false
-privacyEnhanced = true
+    [privacy.youtube]
+        disabled = false
+        privacyEnhanced = true
